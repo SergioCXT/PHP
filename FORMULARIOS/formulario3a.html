@@ -1,0 +1,37 @@
+<html>
+    <!--
+    Crea un archivo HTML que contenga un formulario que incluya un checkbox 
+    (¿Desea recibir factura?), dos input radio (Varón/Mujer), tres input tipo texto 
+    (Nombre, Dirección y Código Postal) y un combobox (lista desplegable) para forma de envío 
+    (normal, por avión o urgente), junto con un botón de envío. Establece como url de envío 
+    la dirección recibe.php y método de envío get y comprueba que se recuperan los datos enviados 
+    correctamente a través de la url.
+    -->
+    <head>
+        <title>formulario3a</title>
+        <meta charset = "utf8">
+    </head>
+
+    <body>
+        <form action="recibe3a.php" method="get">
+        ¿Desea recibir factura?:    <input type="checkbox" name="factura">
+        </br>
+        varón:  <input type="radio" name="sexo" value="varon">
+        </br>
+        mujer:  <input type="radio" name="sexo" value="mujer">
+        </br>
+        Nombre: <input type="text" name="nombre" id="nombre">
+        </br>
+        Dirección:  <input type="text" name="direccion" id="direccion">
+        </br>
+        Código postal:  <input type="text" name="códigoPostal" id="códigoPostal">
+            <select>
+                <option value="normal">Normal</option>
+				<option value="porAvión">Por avión</option>
+				<option value="urgente">Urgente</option>
+            </select>
+        </br>
+        <input type="submit">
+        </form>
+    </body>
+</html>

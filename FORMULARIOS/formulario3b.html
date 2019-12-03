@@ -1,0 +1,47 @@
+<html>
+<!--
+Un operario de una fábrica recibe cada cierto tiempo un depósito cilíndrico de 
+dimensiones variables, que debe llenar de aceite a través de una toma con cierto caudal. 
+Crea una aplicación web que obtenga cuánto tiempo transcurrirá hasta el llenado del depósito.
+El caudal disponible se considera estable durante el llenado del depósito y lo facilita el 
+propio operario.
+Crea un formulario donde se introduzcan los valores del diámetro (metros), la altura 
+(metros) y el caudal (litros/minuto). Se obtendrá como resultado el tiempo de llenado 
+redondeado sin decimales.
+Por ejemplo, si el caudal disponible es de 125 litros por minuto y 
+los valores de diámetro y altura del cilindro son 2.15 y 1.75 metros, 
+el resultado que debes obtener es que el depósito tarda en llenarse aproximadamente 
+50 minutos.
+Recuerda:
+1 litro ocupa un volumen de 1 dm3
+1 m3 = 1000 dm3
+Diámetro = radio * 2
+Volumen de un cilindro = pi * radio2 * altura
+Tiempo llenado = Volumen del depósito / caudal
+-->
+    <head>
+        <title>formulario3b_fco_veragua</title>
+        <meta charset = "utf8">
+    </head>
+    <body>
+        <form action="recibe3b.php" method="REQUEST">
+            INTRODUCE EL DIÁMETRO(metros):      <input type="text" name="diametro">
+        </br>
+        </br>
+            INTRODUCE LA ALTURA(metros):        <input type="text" name="altura">
+        </br>
+        </br>
+            INTRODUCE EL CAUDAL(litros/minuto): <input type="text" name="caudal">
+        </br>
+        </br>
+                                                <input type="submit">
+        </form>
+
+
+
+    </body>
+
+
+
+
+</html>
